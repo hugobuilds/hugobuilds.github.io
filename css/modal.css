@@ -24,8 +24,14 @@
     line-height: 1.6;
 }
 
+.modal-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 #close-btn {
-    margin-top: 30px;
     padding: 15px 30px;
     font-size: 1em;
     background-color: white;
