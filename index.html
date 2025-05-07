@@ -6,12 +6,78 @@
     <title>Site en construction</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/modal.css"> <!-- Modal CSS à supprimer à l'avenir -->
 
 </head>
 
 <body>
-    <h1>🚧 Site en construction 🚧</h1>
-    <p>Mon portfolio arrive bientôt. Restez à l'écoute !</p>
+    <!-- Modal à supprimer à l'avenir -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>🚧 Ce site est en construction ! 🚧</p>
+            <button id="close-btn">Fermer</button>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Mon Portfolio</a>
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link">Projets</a>
+                <div class="dropdown-content">
+                    <a href="pages/projet-1.html">Projet 1</a>
+                    <a href="pages/projet-2.html">Projet 2</a>
+                    <a href="pages/projet-3.html">Projet 3</a>
+                    <a href="pages/projet-4.html">Projet 4</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="pages/cv.html" class="nav-link">CV</a>
+            </li>
+            <li class="nav-item">
+                <a href="pages/portfolio-apprentissage.html" class="nav-link">Portfolio d'apprentissage</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenu principal - Page d'accueil -->
+    <div class="container">
+        <header class="page-header">
+            <h1 class="page-title">Bienvenue sur mon portfolio</h1>
+            <p class="page-subtitle">Étudiant en IUT Informatique</p>
+        </header>
+
+        <section class="bio-section">
+            <div class="bio-image">
+                <img src="#" alt="Photo de profil">
+            </div>
+            <div class="bio-content">
+                <h2 class="bio-name">Hugo Faus</h2>
+                <p class="bio-title">Étudiant en IUT Informatique</p>
+
+                <div class="bio-text">
+                    <p>Accenderat super his incitatum propositum ad nocendum aliqua mulier vilis, quae ad palatium ut poposcerat intromissa insidias ei latenter obtendi prodiderat a militibus obscurissimis. quam Constantina exultans ut in tuto iam locata mariti salute muneratam vehiculoque inpositam per regiae ianuas emisit in publicum, ut his inlecebris alios quoque ad indicanda proliceret paria vel maiora.</p>
+                </div>
+
+                <a href="pages/cv.html" class="button">Voir mon CV</a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 - Portfolio IUT Informatique</p>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/hugo-faus-03a9752aa/" class="social-link">LinkedIn</a>
+            <a href="https://github.com/hugobuilds" class="social-link">GitHub</a>
+            <a href="https://www.instagram.com/hugo_faus/" class="social-link">Instagram</a>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
