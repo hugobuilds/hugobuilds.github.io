@@ -1,0 +1,65 @@
+/* Base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+/* Projet container */
+.projet {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+/* Titres */
+.projet h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #003366;
+    border-left: 5px solid #003366;
+    padding-left: 0.75rem;
+}
+
+.projet h3 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: #005599;
+}
+
+/* Paragraphes et listes */
+.projet p {
+    margin-bottom: 1rem;
+}
+
+.projet ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.projet li {
+    margin-bottom: 0.4rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .projet {
+        padding: 1rem;
+    }
+
+    .projet h2 {
+        font-size: 1.4rem;
+    }
+
+    .projet h3 {
+        font-size: 1.1rem;
+    }
+}
