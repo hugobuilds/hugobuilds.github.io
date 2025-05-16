@@ -1,0 +1,24 @@
+.cv-container {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+}
+.cv-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.download-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.download-btn:hover {
+    background-color: #0056b3;
+}
