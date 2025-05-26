@@ -1,65 +1,73 @@
-/* Base */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0 1rem;
+/* Variables */
+:root {
+    --primary-color: #475465;
+    --secondary-color: #5a6b7d;
+    --accent-color: #64ffda;
+    --background-dark: #1a1a1a;
+    --background-darker: #0f0f0f;
+    --card-background: #262626;
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --text-muted: #888888;
+    --border-color: #333333;
+    --gradient-primary: linear-gradient(135deg, #475465 0%, #5a6b7d 100%);
+    --gradient-accent: linear-gradient(135deg, #64ffda 0%, #4db6ac 100%);
+    --shadow-primary: 0 10px 30px rgba(71, 84, 101, 0.3);
+    --shadow-card: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
-/* Projet container */
-.projet {
-    background-color: #fff;
-    border-radius: 12px;
+/* Base */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--background-dark);
+    color: var(--text-primary);
+    line-height: 1.6;
     padding: 2rem;
-    margin: 2rem auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
 }
 
 /* Titres */
-.projet h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #003366;
-    border-left: 5px solid #003366;
-    padding-left: 0.75rem;
-}
-
-.projet h3 {
-    font-size: 1.2rem;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-    color: #005599;
-}
-
-/* Paragraphes et listes */
-.projet p {
+h1, h2, h3, h4 {
+    color: var(--text-primary);
     margin-bottom: 1rem;
 }
 
-.projet ul {
-    list-style-type: disc;
-    margin-left: 1.5rem;
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
+/* Paragraphes */
+p {
+    color: var(--text-secondary);
     margin-bottom: 1rem;
 }
 
-.projet li {
-    margin-bottom: 0.4rem;
+/* Liens */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-    .projet {
-        padding: 1rem;
-    }
+a:hover {
+    text-decoration: underline;
+}
 
-    .projet h2 {
-        font-size: 1.4rem;
-    }
+/* Sections */
+section {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-card);
+    margin-bottom: 2rem;
+}
 
-    .projet h3 {
-        font-size: 1.1rem;
-    }
+/* Images */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--shadow-primary);
 }
