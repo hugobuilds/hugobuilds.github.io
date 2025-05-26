@@ -2,86 +2,147 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Site en construction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Développeur</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/modal.css"> <!-- Modal CSS à supprimer à l'avenir -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-    <!-- Modal à supprimer à l'avenir -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <p>🚧 Ce site est en construction ! 🚧</p>
-            <img class="modal-image" src="ressources/build.jpeg" alt="Photo en construction">
-            <button id="close-btn">Fermer</button>
-        </div>
-    </div>
-
-    <!-- Navbar -->
     <nav class="navbar">
-        <a href="index.html" class="logo">Mon Portfolio</a>
-        <ul class="nav-links">
-            <li class="nav-item">
-                <a href="index.html" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link">Projets</a>
-                <div class="dropdown-content">
-                    <a href="pages/projet-1.html">Projet 1</a>
-                    <a href="pages/projet-2.html">Projet 2</a>
-                    <a href="pages/projet-3.html">Projet 3</a>
-                    <a href="pages/projet-4.html">Projet 4</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a href="pages/cv.html" class="nav-link">CV</a>
-            </li>
-            <li class="nav-item">
-                <a href="pages/portfolio-apprentissage.html" class="nav-link">Portfolio d'apprentissage</a>
-            </li>
-        </ul>
+        <div class="nav-container">
+            <a href="#" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="pages/cv.html" class="nav-link">CV</a></li>
+                <li><a href="pages/portfolio-apprentissage.html" class="nav-link">Portfolio d'apprentissage</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Contenu principal - Page d'accueil -->
-    <div class="container">
-        <header class="page-header">
-            <h1 class="page-title">Bienvenue sur mon portfolio</h1>
-            <p class="page-subtitle">Étudiant en IUT Informatique</p>
-        </header>
-
-        <section class="bio-section">
-            <div class="bio-image">
-                <img src="#" alt="Photo de profil">
+    <section class="hero" id="accueil">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Accenderat super his</h1>
+                <h2 class="hero-subtitle">Accenderat super his incitatum propositum</h2>
+                <p class="hero-description">
+                    Accenderat super his incitatum propositum ad nocendum aliqua mulier vilis, quae ad palatium ut
+                    poposcerat intromissa insidias ei latenter obtendi prodiderat a militibus obscurissimis. quam
+                    Constantina exultans ut in tuto iam locata mariti salute muneratam vehiculoque inpositam per
+                    regiae ianuas emisit in publicum, ut his inlecebris alios quoque ad indicanda proliceret paria
+                    vel maiora.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                    <a href="pages/cv.html" class="btn btn-outline">Mon CV</a>
+                </div>
             </div>
-            <div class="bio-content">
-                <h2 class="bio-name">Hugo Faus</h2>
-                <p class="bio-title">Étudiant en IUT Informatique</p>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-image">👨‍💻</div>
+                    <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;">Développeur Créatif</h3>
+                    <p style="color: var(--text-secondary);">BUT Informatique - Spécialisation Développement</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="bio-text">
-                    <p>Accenderat super his incitatum propositum ad nocendum aliqua mulier vilis, quae ad palatium ut
-                        poposcerat intromissa insidias ei latenter obtendi prodiderat a militibus obscurissimis. quam
-                        Constantina exultans ut in tuto iam locata mariti salute muneratam vehiculoque inpositam per
-                        regiae ianuas emisit in publicum, ut his inlecebris alios quoque ad indicanda proliceret paria
-                        vel maiora.
-                    </p>
+    <section class="projects-section" id="projets">
+        <div class="section-container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">🖨️</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Module d'impression à distance</h3>
+                        <p class="project-description">
+                            Système d'impression autonome basé sur Raspberry Pi pour la billetterie,
+                            développé lors de mon stage chez Art'tick.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">Raspberry Pi</span>
+                            <span class="tag">CUPS</span>
+                        </div>
+                        <a href="pages/projet-1.html" class="btn btn-outline">En savoir plus</a>
+                    </div>
                 </div>
 
-                <a href="pages/cv.html" class="button">Voir mon CV</a>
+                <div class="project-card">
+                    <div class="project-image">🌐</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Application Web Moderne</h3>
+                        <p class="project-description">
+                            Développement d'une application web responsive avec interface moderne
+                            et fonctionnalités avancées.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">CSS3</span>
+                        </div>
+                        <a href="pages/projet-2.html" class="btn btn-outline">En savoir plus</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">📱</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Application Mobile</h3>
+                        <p class="project-description">
+                            Conception et développement d'une application mobile native
+                            avec interface utilisateur intuitive.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                        <a href="pages/projet-3.html" class="btn btn-outline">En savoir plus</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">📱</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Application Mobile</h3>
+                        <p class="project-description">
+                            Conception et développement d'une application mobile native
+                            avec interface utilisateur intuitive.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                        <a href="pages/projet-4.html" class="btn btn-outline">En savoir plus</a>
+                    </div>
+                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <footer class="footer">
-        <p>© 2025 - Portfolio IUT Informatique</p>
-
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/hugo-faus-03a9752aa/" class="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://github.com/hugobuilds" class="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://www.instagram.com/hugo_faus/" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/hugo-faus-03a9752aa/" class="social-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/hugobuilds" class="social-link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/hugo_faus/" class="social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <p style="color: var(--text-muted);">
+                © 2025 Portfolio. Développé avec passion.
+            </p>
         </div>
     </footer>
 
