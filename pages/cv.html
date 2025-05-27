@@ -3,17 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Mon CV</title>
-    <link rel="stylesheet" href="../css/style.css">
+
     <link rel="stylesheet" href="../css/cv.css">
 </head>
 <body>
-    <div class="cv-container">
-        <h1>Mon CV</h1>
-        <!-- Image du CV -->
-        <img src="../ressources/cv-hugo-faus.jpg" alt="CV" class="cv-image">
+<div class="cv-container">
+    <h1>Mon CV</h1>
 
-        <!-- Bouton de téléchargement -->
-        <a href="../ressources/FAUS-Hugo-CV.pdf" class="download-btn" download>Télécharger le CV</a>
+    <!-- Container de l'image avec effet moderne -->
+    <div class="cv-image-container">
+        <img src="../ressources/cv-hugo-faus.jpg" alt="CV de Hugo Faus - Étudiant en BUT Informatique" class="cv-image" loading="lazy">
     </div>
+
+    <!-- Bouton de téléchargement stylisé -->
+    <a href="../ressources/FAUS-Hugo-CV.pdf" class="download-btn" download="CV-Hugo-Faus.pdf" aria-label="Télécharger mon CV au format PDF">
+        Télécharger le CV
+    </a>
+
+    <!-- Section d'informations supplémentaires
+    <div class="cv-info">
+        <h3>À propos de ce CV</h3>
+        <p>
+            Ce CV présente mon parcours en tant qu'étudiant en BUT Informatique, mes compétences techniques et mes expériences professionnelles.
+        </p>
+        <ul>
+            <li>Format PDF haute qualité</li>
+            <li>Mise à jour régulière</li>
+            <li>Optimisé pour l'impression</li>
+            <li>Compatible avec les systèmes de recrutement</li>
+        </ul>
+    </div>
+    -->
+</div>
 </body>
 </html>
