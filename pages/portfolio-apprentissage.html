@@ -2,72 +2,218 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio d'apprentissage</title>
-
-    <link rel="stylesheet" href="../css/projet.css">
-    <link rel="stylesheet" href="../css/button.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio d'apprentissage - Hugo FAUS</title>
+    <link rel="stylesheet" href="../css/portfolio-apprentissage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <a href="../index.html" class="btn-retour">
-        <i class="fa-solid fa-arrow-left"></i> Retour
-    </a>
 
-    <section id="portfolio-apprentissage" class="projet">
-        <h2>Portfolio d’apprentissage – Semestre 4</h2>
-
-        <!-- Compétence 3 -->
-        <h3>Compétence 3 : Administrer des systèmes informatiques communicants complexes</h3>
-        <p>
-            Cette compétence consiste à concevoir et maintenir des systèmes informatiques communicants tout en assurant leur sécurité,
-            leur disponibilité et leur performance. Elle couvre aussi bien les services réseau que la sécurisation des données et des infrastructures.
-        </p>
-        <p>
-            J’ai particulièrement développé cette compétence lors de mon stage de deuxième année, avec le projet de <strong>module d’impression à distance</strong>.
-            Ce projet m’a permis d’utiliser un serveur d’impression (CUPS), de configurer des services réseaux sous Linux, de gérer la connexion sécurisée à une
-            interface web (Flask), et d’assurer la communication entre différents systèmes (Raspberry Pi, application WinDev, base HFSQL).
-            J’ai également assuré l’autonomie de déploiement du module via des scripts shell et une documentation technique.
-        </p>
-        <ul>
-            <li><strong>Projet associé :</strong> <em>Module d’impression à distance</em></li>
-            <li><strong>Compétences mobilisées :</strong> configuration réseau, sécurité, architecture système, virtualisation, documentation technique</li>
+<nav class="navbar">
+    <div class="nav-container">
+        <ul class="nav-links">
+            <li><a href="../index.html" class="nav-link">Accueil</a></li>
+            <li><a href="../index.html#projets" class="nav-link">Projets</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="cv.html" class="nav-link">CV</a></li>
+            <li><a href="portfolio-apprentissage.html" class="nav-link active">Portfolio</a></li>
         </ul>
+    </div>
+</nav>
 
-        <!-- Compétence 4 -->
-        <h3>Compétence 4 : Gérer des données de l'information</h3>
-        <p>
-            Cette compétence vise à assurer la qualité, la sécurité et la bonne structuration des données tout au long de leur cycle de vie.
-            Elle intègre la conception de modèles de données, leur optimisation, et leur restitution visuelle.
-        </p>
-        <p>
-            Dans le cadre de la <strong>SAE sur la gestion de la poursuite d’études</strong>, j’ai participé à la structuration et à l'affichage des données étudiantes.
-            Le projet intégrait des filtres, des tableaux, des graphiques, ainsi qu’un générateur d’avis automatique, le tout manipulé en PHP/JavaScript.
-            Ce travail m’a permis d’approfondir la gestion de données côté back-end et leur restitution côté front.
-        </p>
-        <ul>
-            <li><strong>Projet associé :</strong> <em>SAE – Application de gestion de la poursuite d’études</em></li>
-            <li><strong>Compétences mobilisées :</strong> restitution de données, logique de tri, rigueur sur la qualité des données, visualisation dynamique</li>
-        </ul>
+<a href="../index.html" class="btn-retour">
+    <i class="fas fa-arrow-left"></i>
+    Retour à l'accueil
+</a>
 
-        <!-- Compétence 5 -->
-        <h3>Compétence 5 : Conduire un projet</h3>
+<section id="portfolio-apprentissage" class="portfolio">
+    <h2>Portfolio d'apprentissage – Semestre 4</h2>
+
+    <div class="intro-section">
         <p>
-            Cette compétence porte sur la gestion de projet informatique, de l’analyse des besoins à la livraison du produit final,
-            en incluant l’organisation du travail, la communication entre acteurs, et l’adaptabilité face aux imprévus.
+            Ce portfolio présente mes apprentissages et réalisations du semestre 4 de BUT Informatique, organisés selon les compétences du référentiel.
+            Chaque compétence est illustrée par des projets concrets et des expériences professionnelles qui témoignent de ma progression.
         </p>
-        <p>
-            J’ai pu travailler cette compétence à travers plusieurs expériences :
-        </p>
-        <ul>
-            <li><strong>SAE Poursuite d’études :</strong> j’ai été Product Owner, en charge du lien entre le client (enseignant) et l’équipe,
-                du pilotage fonctionnel, des arbitrages et des rapports de sprint.</li>
-            <li><strong>Nuit de l’Info 2024 :</strong> participation active à un hackathon, contribution à l’organisation collective et
-                développement complet d’un défi sous pression.</li>
-            <li><strong>Projet Trains IHM :</strong> travail en binôme avec gestion des contraintes de coordination, rythme et choix techniques.</li>
-        </ul>
-        <p>
-            Ces expériences m'ont permis de gagner en autonomie, en organisation, et en communication au sein de projets collectifs.
-        </p>
-    </section>
+    </div>
+
+    <!-- Compétence 3 -->
+    <div class="competence-card">
+        <div class="competence-header">
+            <div class="competence-number">03</div>
+            <h3>Administrer des systèmes informatiques communicants complexes</h3>
+        </div>
+
+        <div class="competence-content">
+            <p class="competence-description">
+                Cette compétence consiste à concevoir et maintenir des systèmes informatiques communicants tout en assurant leur sécurité,
+                leur disponibilité et leur performance. Elle couvre aussi bien les services réseau que la sécurisation des données et des infrastructures.
+            </p>
+
+            <div class="competence-details">
+                <h4>Mise en pratique</h4>
+                <p>
+                    J'ai particulièrement développé cette compétence lors de mon stage de deuxième année, avec le projet de <strong>module d'impression à distance</strong>.
+                    Ce projet m'a permis d'utiliser un serveur d'impression (CUPS), de configurer des services réseaux sous Linux, de gérer la connexion sécurisée à une
+                    interface web (Flask), et d'assurer la communication entre différents systèmes (Raspberry Pi, application WinDev, base HFSQL).
+                    J'ai également assuré l'autonomie de déploiement du module via des scripts shell et une documentation technique.
+                </p>
+            </div>
+
+            <div class="competence-tags">
+                <span class="tag">Configuration réseau</span>
+                <span class="tag">Sécurité</span>
+                <span class="tag">Architecture système</span>
+                <span class="tag">Virtualisation</span>
+                <span class="tag">Documentation technique</span>
+            </div>
+
+            <div class="projet-associe">
+                <i class="fas fa-project-diagram"></i>
+                <strong>Projet associé :</strong> Module d'impression à distance
+            </div>
+        </div>
+    </div>
+
+    <!-- Compétence 4 -->
+    <div class="competence-card">
+        <div class="competence-header">
+            <div class="competence-number">04</div>
+            <h3>Gérer des données de l'information</h3>
+        </div>
+
+        <div class="competence-content">
+            <p class="competence-description">
+                Cette compétence vise à assurer la qualité, la sécurité et la bonne structuration des données tout au long de leur cycle de vie.
+                Elle intègre la conception de modèles de données, leur optimisation, et leur restitution visuelle.
+            </p>
+
+            <div class="competence-details">
+                <h4>Mise en pratique</h4>
+                <p>
+                    Dans le cadre de la <strong>SAE sur la gestion de la poursuite d'études</strong>, j'ai participé à la structuration et à l'affichage des données étudiantes.
+                    Le projet intégrait des filtres, des tableaux, des graphiques, ainsi qu'un générateur d'avis automatique, le tout manipulé en PHP/JavaScript.
+                    Ce travail m'a permis d'approfondir la gestion de données côté back-end et leur restitution côté front.
+                </p>
+            </div>
+
+            <div class="competence-tags">
+                <span class="tag">Restitution de données</span>
+                <span class="tag">Logique de tri</span>
+                <span class="tag">Qualité des données</span>
+                <span class="tag">Visualisation dynamique</span>
+            </div>
+
+            <div class="projet-associe">
+                <i class="fas fa-database"></i>
+                <strong>Projet associé :</strong> SAE - Application de gestion de la poursuite d'études
+            </div>
+        </div>
+    </div>
+
+    <!-- Compétence 5 -->
+    <div class="competence-card">
+        <div class="competence-header">
+            <div class="competence-number">05</div>
+            <h3>Conduire un projet</h3>
+        </div>
+
+        <div class="competence-content">
+            <p class="competence-description">
+                Cette compétence porte sur la gestion de projet informatique, de l'analyse des besoins à la livraison du produit final,
+                en incluant l'organisation du travail, la communication entre acteurs, et l'adaptabilité face aux imprévus.
+            </p>
+
+            <div class="competence-details">
+                <h4>Mise en pratique</h4>
+                <p>J'ai pu travailler cette compétence à travers plusieurs expériences variées :</p>
+
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <div class="experience-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="experience-content">
+                            <h5>SAE Poursuite d'études</h5>
+                            <p>Product Owner en charge du lien entre le client (enseignant) et l'équipe, du pilotage fonctionnel, des arbitrages et des rapports de sprint.</p>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="experience-content">
+                            <h5>Nuit de l'Info 2024</h5>
+                            <p>Participation active à un hackathon, contribution à l'organisation collective et développement complet d'un défi sous pression.</p>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-icon">
+                            <i class="fas fa-train"></i>
+                        </div>
+                        <div class="experience-content">
+                            <h5>Projet Trains IHM</h5>
+                            <p>Travail en binôme avec gestion des contraintes de coordination, rythme et choix techniques.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="competence-tags">
+                <span class="tag">Autonomie</span>
+                <span class="tag">Organisation</span>
+                <span class="tag">Communication</span>
+                <span class="tag">Gestion d'équipe</span>
+                <span class="tag">Adaptabilité</span>
+            </div>
+
+            <div class="bilan-section">
+                <div class="bilan-content">
+                    <i class="fas fa-lightbulb"></i>
+                    <p><strong>Bilan :</strong> Ces expériences m'ont permis de gagner en autonomie, en organisation, et en communication au sein de projets collectifs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Hugo FAUS. Développé avec passion.</p>
+    </div>
+</footer>
+
+<script>
+    // Navbar background on scroll - cohérent avec les autres pages
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.style.background = 'rgba(26, 26, 26, 0.98)';
+        } else {
+            navbar.style.background = 'rgba(26, 26, 26, 0.95)';
+        }
+    });
+
+    // Animation d'apparition des cartes au scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animationDelay = `${entry.target.dataset.delay || 0}ms`;
+                entry.target.classList.add('animate-in');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.competence-card').forEach((card, index) => {
+        card.dataset.delay = index * 200;
+        observer.observe(card);
+    });
+</script>
 </body>
 </html>
