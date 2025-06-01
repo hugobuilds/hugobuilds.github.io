@@ -2,61 +2,95 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Projet 1</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module d'impression à distance - Hugo FAUS</title>
     <link rel="stylesheet" href="../css/projet.css">
-    <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <a href="../index.html" class="btn-retour">
-        <i class="fa-solid fa-arrow-left"></i> Retour
-    </a>
 
-    <section id="projet-1" class="projet">
-        <h2>Projet 1 – Module d’impression à distance</h2>
-
-        <p>
-            Ce projet a été réalisé lors de mon stage de deuxième année de BUT Informatique au sein de l’entreprise <strong>Art’tick</strong>, située à Vedène. L’objectif était de concevoir un module d’impression à distance, destiné à permettre l’impression de billets de spectacle depuis une application web. Ce module, basé sur un <strong>Raspberry Pi</strong>, devait fonctionner de manière autonome, sécurisée et être facilement déployable chez les clients.
-        </p>
-
-        <p>
-            Le système utilise <strong>Flask</strong> pour l’interface web, <strong>CUPS</strong> pour la gestion des impressions, et <strong>Hangover</strong> pour la virtualisation d’un exécutable Windows. Une interface permet de suivre l’état du module (température, IP, état imprimante) et de configurer le Wi-Fi. L’ensemble est livré avec un script d’installation automatique.
-        </p>
-
-        <h3>Technologies utilisées</h3>
-        <ul class="technologies-list">
-            <li>Python (Flask)</li>
-            <li>Linux / Raspberry Pi OS Lite</li>
-            <li>Shell script</li>
-            <li>CUPS (serveur d'impression)</li>
-            <li>Hangover (virtualisation exécutable Windows)</li>
-            <li>HFSQL (base de données)</li>
+<nav class="navbar">
+    <div class="nav-container">
+        <ul class="nav-links">
+            <li><a href="../index.html" class="nav-link">Accueil</a></li>
+            <li><a href="../index.html#projets" class="nav-link active">Projets</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="cv.html" class="nav-link">CV</a></li>
+            <li><a href="portfolio-apprentissage.html" class="nav-link">Portfolio</a></li>
         </ul>
+    </div>
+</nav>
 
-        <h3>Compétences mobilisées</h3>
-        <ul>
-            <li>Systèmes embarqués (Raspberry Pi)</li>
-            <li>Virtualisation avec Hangover</li>
-            <li>Développement backend avec Flask</li>
-            <li>Configuration réseau (Hotspot Wi-Fi, IP)</li>
-            <li>Autonomie et gestion de projet</li>
-        </ul>
+<a href="../index.html" class="btn-retour">
+    <i class="fas fa-arrow-left"></i>
+    Retour à l'accueil
+</a>
 
-        <h3>Rôle personnel</h3>
-        <p>
-            J’ai travaillé seul sur ce projet, en collaboration ponctuelle avec mon tuteur de stage et les développeurs de l’entreprise. J’ai mené toutes les étapes du projet, de l’analyse des besoins jusqu’aux tests finaux.
-        </p>
+<section id="projet-1" class="projet">
+    <h2>Module d'impression à distance</h2>
 
-        <h3>Contexte</h3>
-        <p>
-            <strong>Durée :</strong> 20 janvier au 3 avril 2025<br>
-            <strong>Entreprise :</strong> Art’tick, secteur billetterie<br>
-            <strong>Produit :</strong> TickBoss – solution utilisée par plus de 40 % des lieux culturels du Festival d’Avignon
-        </p>
+    <p>
+        Ce projet a été réalisé lors de mon stage de deuxième année de BUT Informatique au sein de l'entreprise <strong>Art'tick</strong>, située à Vedène. L'objectif était de concevoir un module d'impression à distance, destiné à permettre l'impression de billets de spectacle depuis une application web. Ce module, basé sur un <strong>Raspberry Pi</strong>, devait fonctionner de manière autonome, sécurisée et être facilement déployable chez les clients.
+    </p>
 
-        <h3>Trace visuelle</h3>
-        <p><em>(À insérer : capture de l’interface Flask, schéma avant/après, photo du Raspberry Pi…)</em></p>
-    </section>
+    <p>
+        Le système utilise <strong>Flask</strong> pour l'interface web, <strong>CUPS</strong> pour la gestion des impressions, et <strong>Hangover</strong> pour la virtualisation d'un exécutable Windows. Une interface permet de suivre l'état du module (température, IP, état imprimante) et de configurer le Wi-Fi. L'ensemble est livré avec un script d'installation automatique.
+    </p>
+
+    <h3>Technologies utilisées</h3>
+    <ul class="technologies-list">
+        <li>Python (Flask)</li>
+        <li>Linux / Raspberry Pi OS Lite</li>
+        <li>Shell script</li>
+        <li>CUPS (serveur d'impression)</li>
+        <li>Hangover (virtualisation)</li>
+        <li>HFSQL (base de données)</li>
+    </ul>
+
+    <h3>Compétences mobilisées</h3>
+    <ul>
+        <li>Systèmes embarqués (Raspberry Pi)</li>
+        <li>Virtualisation avec Hangover</li>
+        <li>Développement backend avec Flask</li>
+        <li>Configuration réseau (Hotspot Wi-Fi, IP)</li>
+        <li>Autonomie et gestion de projet</li>
+        <li>Intégration de services système Linux</li>
+        <li>Débogage et optimisation</li>
+    </ul>
+
+    <h3>Rôle personnel</h3>
+    <p>
+        J'ai travaillé seul sur ce projet, en collaboration ponctuelle avec mon tuteur de stage et les développeurs de l'entreprise. J'ai mené toutes les étapes du projet, de l'analyse des besoins jusqu'aux tests finaux. Cette autonomie m'a permis de développer mes compétences en gestion de projet et en résolution de problèmes complexes.
+    </p>
+
+    <h3>Contexte</h3>
+    <p>
+        <strong>Durée :</strong> 20 janvier au 3 avril 2025<br>
+        <strong>Entreprise :</strong> Art'tick, secteur billetterie<br>
+        <strong>Produit :</strong> TickBoss – solution utilisée par plus de 40 % des lieux culturels du Festival d'Avignon<br>
+        <strong>Encadrant :</strong> Équipe de développement Art'tick
+    </p>
+
+    <h3>Trace visuelle</h3>
+    <p><em>Captures d'écran de l'interface Flask, schéma d'architecture système, et photos du Raspberry Pi en cours d'ajout...</em></p>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Hugo FAUS. Développé avec passion.</p>
+    </div>
+</footer>
+
+<script>
+    // Navbar background on scroll - cohérent avec les autres pages
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.style.background = 'rgba(26, 26, 26, 0.98)';
+        } else {
+            navbar.style.background = 'rgba(26, 26, 26, 0.95)';
+        }
+    });
+</script>
 </body>
 </html>
