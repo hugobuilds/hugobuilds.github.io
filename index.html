@@ -9,152 +9,224 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <ul class="nav-links">
-                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
-                <li><a href="#projets" class="nav-link">Projets</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="pages/cv.html" class="nav-link">CV</a></li>
-                <li><a href="pages/portfolio-apprentissage.html" class="nav-link">Portfolio d'apprentissage</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav class="navbar">
+    <div class="nav-container">
+        <ul class="nav-links">
+            <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+            <li><a href="#projets" class="nav-link">Projets</a></li>
+            <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+            <li><a href="pages/cv.html" class="nav-link">CV</a></li>
+            <li><a href="pages/portfolio-apprentissage.html" class="nav-link">Portfolio</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <section class="hero" id="accueil">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">FAUS Hugo</h1>
-                <h2 class="hero-subtitle">Biographie</h2>
-                <p class="hero-description">
-                    Je suis étudiant en deuxième année de BUT Informatique à l’IUT de Montpellier, dans le parcours RACDV (Réalisation d’Applications : Conception, Développement, Validation). Calme, autonome et curieux, j’aime anticiper et bien faire les choses, surtout lorsque le sujet me passionne.<br>
+<section class="hero" id="accueil">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1 class="hero-title">Hugo FAUS</h1>
+            <h2 class="hero-subtitle">Étudiant en Informatique</h2>
+            <div class="hero-description">
+                <p>Je suis étudiant en deuxième année de BUT Informatique à l'IUT de Montpellier, dans le parcours RACDV (Réalisation d'Applications : Conception, Développement, Validation). Calme, autonome et curieux, j'aime anticiper et bien faire les choses, surtout lorsque le sujet me passionne.</p>
 
-                    L’informatique m’a attiré pour sa liberté créative, son côté “bac à sable” où tout semble possible. Après un bac général avec spécialités Mathématiques et NSI au lycée Jean Vilar, j’ai d’abord été séduit par la cybersécurité, avant de m’orienter vers le développement web, un domaine où je peux allier logique, créativité et efficacité.<br>
+                <p>L'informatique m'a attiré pour sa liberté créative, son côté "bac à sable" où tout semble possible. Après un bac général avec spécialités Mathématiques et NSI, j'ai d'abord été séduit par la cybersécurité, avant de m'orienter vers le développement web, un domaine où je peux allier logique, créativité et efficacité.</p>
 
-                    En parallèle, je pratique la danse Boogie Woogie en équipe de France, avec des compétitions à l’international. Cette discipline m’apporte rigueur, endurance et esprit d’équipe, que j’applique également dans mes projets informatiques.<br>
+                <p>En parallèle, je pratique la danse Boogie Woogie en équipe de France, avec des compétitions à l'international. Cette discipline m'apporte rigueur, endurance et esprit d'équipe, que j'applique également dans mes projets informatiques.</p>
 
-                    Mon objectif est de poursuivre en école d’ingénieur en alternance, si possible avec la même entreprise. À terme, j’aimerais m’installer à l’étranger, idéalement aux États-Unis, pour y construire ma carrière.
-                </br>
-                <div class="hero-buttons">
-                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
-                    <a href="pages/cv.html" class="btn btn-outline">Mon CV</a>
-                </div>
+                <p>Mon objectif est de poursuivre en école d'ingénieur en alternance. À terme, j'aimerais m'installer à l'étranger, idéalement aux États-Unis, pour y construire ma carrière.</p>
             </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-image">👨‍💻</div>
-                    <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;">Développeur Créatif</h3>
-                    <p style="color: var(--text-secondary);">BUT Informatique - Parcours RACDV</p>
-                </div>
+            <div class="hero-buttons">
+                <a href="#projets" class="btn btn-primary">
+                    <i class="fas fa-folder-open"></i>
+                    Voir mes projets
+                </a>
+                <a href="pages/cv.html" class="btn btn-outline">
+                    <i class="fas fa-file-alt"></i>
+                    Mon CV
+                </a>
             </div>
         </div>
-    </section>
+        <div class="hero-image">
+            <div class="profile-card">
+                <div class="profile-image">👨‍💻</div>
+                <h3 class="profile-title">Développeur Créatif</h3>
+                <p class="profile-subtitle">BUT Informatique - Parcours RACDV</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section class="projects-section" id="projets">
-        <div class="section-container">
-            <h2 class="section-title">Mes Projets</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">🖨️</div>
-                    <div class="project-content">
-                        <h3 class="project-title">Module d'impression à distance</h3>
-                        <p class="project-description">
-                            Système d'impression à distance basé sur un Raspberry Pi,
-                            développé lors de mon stage chez Art'tick.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Flask</span>
-                            <span class="tag">Raspberry Pi</span>
-                            <span class="tag">CUPS</span>
-                            <span class="tag">WinDev</span>
-                        </div>
-                        <a href="pages/projet-1.html" class="btn btn-outline">En savoir plus</a>
+<section class="projects-section" id="projets">
+    <div class="section-container">
+        <h2 class="section-title">Mes Projets</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">🖨️</div>
+                <div class="project-content">
+                    <h3 class="project-title">Module d'impression à distance</h3>
+                    <p class="project-description">
+                        Système d'impression à distance basé sur un Raspberry Pi,
+                        développé lors de mon stage chez Art'tick.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Raspberry Pi</span>
+                        <span class="tag">CUPS</span>
+                        <span class="tag">WinDev</span>
                     </div>
+                    <a href="pages/projet-1.html" class="btn btn-outline">
+                        <i class="fas fa-arrow-right"></i>
+                        En savoir plus
+                    </a>
                 </div>
+            </div>
 
-                <div class="project-card">
-                    <div class="project-image">🌐</div>
-                    <div class="project-content">
-                        <h3 class="project-title">Application web – Poursuite d'études</h3>
-                        <p class="project-description">
-                            Projet de SAE en méthode agile permettant de gérer les candidatures
-                            à la poursuite d'études des étudiants d'un IUT.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Php</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Architecture MVC</span>
-                        </div>
-                        <a href="pages/projet-2.html" class="btn btn-outline">En savoir plus</a>
+            <div class="project-card">
+                <div class="project-image">🌐</div>
+                <div class="project-content">
+                    <h3 class="project-title">Application web – Poursuite d'études</h3>
+                    <p class="project-description">
+                        Projet de SAE en méthode agile permettant de gérer les candidatures
+                        à la poursuite d'études des étudiants d'un IUT.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Architecture MVC</span>
                     </div>
+                    <a href="pages/projet-2.html" class="btn btn-outline">
+                        <i class="fas fa-arrow-right"></i>
+                        En savoir plus
+                    </a>
                 </div>
+            </div>
 
-                <div class="project-card">
-                    <div class="project-image">🌐</div>
-                    <div class="project-content">
-                        <h3 class="project-title">Site web – Nuit de l’Info 2024</h3>
-                        <p class="project-description">
-                            Évènement national : création d’une application interactive et
-                            éducative sur l’océan et le corps humain en une nuit.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">GitHub</span>
-                        </div>
-                        <a href="pages/projet-3.html" class="btn btn-outline">En savoir plus</a>
+            <div class="project-card">
+                <div class="project-image">🌊</div>
+                <div class="project-content">
+                    <h3 class="project-title">Site web – Nuit de l'Info 2024</h3>
+                    <p class="project-description">
+                        Évènement national : création d'une application interactive et
+                        éducative sur l'océan et le corps humain en une nuit.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">GitHub</span>
                     </div>
+                    <a href="pages/projet-3.html" class="btn btn-outline">
+                        <i class="fas fa-arrow-right"></i>
+                        En savoir plus
+                    </a>
                 </div>
+            </div>
 
-                <div class="project-card">
-                    <div class="project-image">🌐</div>
-                    <div class="project-content">
-                        <h3 class="project-title">SAE – Projet Trains IHM</h3>
-                        <p class="project-description">
-                            Numérisation du jeu de plateau Trains. Développement en Java/JavaFX,
-                            avec logique métier complexe et algorithmes de graphes.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">JavaFX</span>
-                            <span class="tag">GitLab</span>
-                        </div>
-                        <a href="pages/projet-4.html" class="btn btn-outline">En savoir plus</a>
+            <div class="project-card">
+                <div class="project-image">🚂</div>
+                <div class="project-content">
+                    <h3 class="project-title">SAE – Projet Trains IHM</h3>
+                    <p class="project-description">
+                        Numérisation du jeu de plateau Trains. Développement en Java/JavaFX,
+                        avec logique métier complexe et algorithmes de graphes.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">JavaFX</span>
+                        <span class="tag">GitLab</span>
                     </div>
+                    <a href="pages/projet-4.html" class="btn btn-outline">
+                        <i class="fas fa-arrow-right"></i>
+                        En savoir plus
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="contact">
-        <p>Mail perso :</p>
-        <p>Mail étudiant</p>
-        <p>Téléphone</p>
-
+<section class="contact-section">
+    <div class="section-container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> hugo.faus@etu.umontpellier.fr</p>
+            <p><i class="fas fa-phone"></i> 07 68 17 00 79</p>
+        </div>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/hugo-faus-03a9752aa/" class="social-link" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/hugo-faus-03a9752aa/" class="social-link" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://github.com/hugobuilds" class="social-link" target="_blank">
-                <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/hugobuilds" class="social-link" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.instagram.com/hugo_faus/" class="social-link" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instagram.com/hugo_faus/" class="social-link" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
             </a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <p style="color: var(--text-muted);">
-                © 2025 Portfolio. Développé avec passion.
-            </p>
-        </div>
-    </footer>
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Hugo FAUS. Développé avec passion.</p>
+    </div>
+</footer>
 
-    <script src="js/script.js"></script>
+<script>
+    // Navigation active state
+    document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section[id]');
+
+        function updateActiveNav() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNav);
+
+        // Smooth scrolling
+        navLinks.forEach(link => {
+            if (link.getAttribute('href').startsWith('#')) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            }
+        });
+    });
+
+    // Navbar background on scroll
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.style.background = 'rgba(26, 26, 26, 0.98)';
+        } else {
+            navbar.style.background = 'rgba(26, 26, 26, 0.95)';
+        }
+    });
+</script>
 </body>
 </html>
